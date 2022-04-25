@@ -1,0 +1,58 @@
+[
+    {
+        "FMP": {
+            "Annual Income Statement": [
+                {
+                    "year": "2001",
+                    "income": "1000"
+                },
+                {
+                    "year": "200",
+                    "income": "500"
+                }
+            ],
+            "Stock Price": {
+                "Date": "01-01-2022",
+                "Price": "22.22"
+            },
+            "Ratios": [
+                {
+                    "Ratio": "PE",
+                    "Value": "50.32"
+                },
+                {
+                    "Ratio": "ROI",
+                    "Value": "3.2"
+                }
+            ]
+        }
+    },
+    {
+        "FRED": {
+            "Income": [
+                {
+                    "state": "NJ",
+                    "income": "100000"
+                },
+                {
+                    "state": "DE",
+                    "income": "50000"
+                }
+            ],
+            "Median Home Price": {
+                "state": "NJ",
+                "Price": "555555"
+            },
+            "GDP": [
+                {
+                    "Level": "Federal",
+                    "Value": "505.32"
+                },
+                {
+                    "Level": "NJ State",
+                    "Value": "34.2"
+                }
+            ]
+        }
+    }
+]

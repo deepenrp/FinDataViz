@@ -1,25 +1,52 @@
 // import React {useEffect, useState} from 'react';
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, {Component} from 'react';
+import { useEffect, useState } from 'react';
+import axios from '../actions/axios-url-mappings';
+import {Link} from 'react-router-dom';
 
-function StockCompany() {
 
-    // useEffect( () => {
-    //     fetchItems();
-    // }, []);
+export default class StockCompany extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            stocks: []
+        };
+    }
 
-    // const [items, setItems] = useState([]);
+    getStocksData() {
+        axios.get('/stock', {}).then(res => {
+            const stockData = res.data
+            console.log("Stock Data:- ", stockData)
+            const stocks = stockData.map(s =>
+                <div>
+                    <p>{s.stock}</p>
+                    <p>{s.price}</p>
+                </div>
+                )
 
-    // const fetchItems = async () => {
-    //     const mockData = await fetch('/stock');
-    //     const items = await mockData.json();
-    //     setItems(items);
-    //     console.log(items);
-    // };
+                this.setState({
+                    stocks
+                })
 
-    return(
-        <h1>STOCK ANALYSIS</h1>
-    );
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }
+
+    componentDidMount(){
+        this.getStocksData()
+    }
+
+    render() {
+
+        return(
+
+            <div>
+                <h1>STOCK ANALYSIS</h1>
+                {this.state.stocks}
+            </div>
+
+        );
+    }
 }
-
-export default StockCompany;

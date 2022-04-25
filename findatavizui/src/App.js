@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -25,7 +26,7 @@ function App() {
           <Nav />
 
           <Routes>
-            <Route path="/" element={<OverallMarket />} />
+            <Route path="/market" element={<OverallMarket />} />
             <Route path="/stock" element={<StockCompany />} />
             <Route path="/correlations" element={<Correlations />} />
           </Routes>

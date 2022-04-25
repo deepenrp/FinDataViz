@@ -9,7 +9,7 @@ function Nav() {
             </button>
             <div id="navMainMenu" class="navbar-collapse collapse">
                 <div class="navbar-nav ml-auto">
-                    <Link to='/' className="nav-item nav-link active">Overall Market</Link>
+                    <Link to='/market' className="nav-item nav-link active">Overall Market</Link>
                     <hr/>
                     <Link to='/stock' className="nav-item nav-link">Stock Company</Link>
                     <hr/>
