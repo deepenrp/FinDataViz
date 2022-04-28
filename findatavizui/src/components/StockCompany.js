@@ -1,7 +1,7 @@
 // import React {useEffect, useState} from 'react';
 import React, {Component} from 'react';
 import { useEffect, useState } from 'react';
-import axios from '../actions/axios-url-mappings';
+import axios from '../axios-url-mappings';
 import {Link} from 'react-router-dom';
 
 

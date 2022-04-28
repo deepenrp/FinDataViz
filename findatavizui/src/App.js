@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import logo from './images/big-data-viz.JPG';
-import './App.css';
+import './styles/App.css';
 import Nav from './components/Nav';
 import OverallMarket from './components/OverallMarket';
 import StockCompany from './components/StockCompany';

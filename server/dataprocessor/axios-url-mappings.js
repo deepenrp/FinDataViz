@@ -32,4 +32,16 @@ router.get('/market', (req, res) => {
     res.end(JSON.stringify(sentMockMarketData));
 });
 
+router.get('/correlations', (req, res) => {
+    const mockCorrData = 
+        {
+            "beta": 2.5,
+            "pe": 56.32,
+            "atr" : 5
+        };
+    console.log(mockCorrData);
+    res.end(JSON.stringify(mockCorrData));
+});
+
+
 module.exports = router;
