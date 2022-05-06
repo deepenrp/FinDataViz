@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FinDataViz App",
+  "name": "Visualizing Financial Data",
   "icons": [
     {
       "src": "favicon.ico",

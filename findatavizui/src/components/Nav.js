@@ -1,23 +1,30 @@
 import React from 'react'; // ES6 js
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from '../images/waves.jpg';
+import '../styles/Nav.css';
 
 function Nav() {
-    return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMainMenu" aria-controls="navMainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navMainMenu" class="navbar-collapse collapse">
-                <div class="navbar-nav ml-auto">
-                    <Link to='/market' className="nav-item nav-link active">Overall Market</Link>
-                    <hr/>
-                    <Link to='/stock' className="nav-item nav-link">Stock Company</Link>
-                    <hr/>
-                    <Link to='/correlations' className="nav-item nav-link">Correlations</Link>
-                    <hr/>
-                </div>
-            </div>
+    return (
+        <nav class="navbar justify-content-center">
+
+            <background>
+                <h3 class="navHeader"><center>Financial Data Viz</center></h3>
+                <ul class="nav justify-content-center">
+                    <hr size="18"></hr>
+                    <li class="nav-item">
+                        <Link to='/market' className="nav-item nav-link navFont">Overall Market</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to='/stock' className="nav-item nav-link navFont">Stock Company</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to='/correlations' class="nav-item nav-link navFont">Correlations</Link>
+                    </li>
+                    <hr size="18"></hr>
+                </ul>
+            </background>
         </nav>
+
     );
 }
 
